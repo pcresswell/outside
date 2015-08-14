@@ -1,2 +1,1 @@
-web: bundle exec puma -p $PORT -C ./config/puma.rb
-worker: bundle exec rake jobs:work
+web: bundle exec passenger start -p $PORT --max-pool-size 2
