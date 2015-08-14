@@ -25,6 +25,9 @@ gem "sass-rails", "~> 5.0"
 gem "simple_form"
 gem "title"
 gem "uglifier"
+gem "devise"
+gem "milia"
+gem "recaptcha"
 
 group :development do
   gem "spring"
@@ -55,4 +58,6 @@ end
 group :staging, :production do
   gem "rails_stdout_logging"
   gem "rack-timeout"
+  gem "paper_trail"
+
 end
